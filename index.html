@@ -1,14 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Mokkai | シンプルで上質な家具</title>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">Mokkai</div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
 
+  <!-- Menu Overlay -->
+  <div class="menu-overlay" id="menuOverlay">
+    <ul class="menu-links">
+      <li><a href="#" data-page="home">Home</a></li>
+      <li><a href="#" data-page="about">About</a></li>
+      <li><a href="#" data-page="products">Works</a></li>
+      <li><a href="#" data-page="news">News</a></li>
+      <li><a href="#" data-page="contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Home Section -->
+    <section class="page-section home-section active" id="home">
+      <div class="hero-content">
+        <h1>Mokkai FURNITURE</h1>
+        <p>シンプルで上質な家具で、あなたの空間を豊かに</p>
+        <a href="#" class="cta-button" data-page="products">コレクションを見る</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="page-section" id="about">
+      <div class="content-section">
+        <h2 class="section-title">私たちについて</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>Mokkaiは、シンプルで機能的、そして美しいデザインの家具を提供しています。職人の技術と現代的なデザインが融合した、長く愛用していただける家具を心を込めて製作しています。</p>
+            <p>素材選びから仕上げまで、すべての工程において品質を追求し、お客様の暮らしに寄り添う家具をお届けします。</p>
+          </div>
+          <div class="about-image"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="page-section" id="products">
+      <div class="content-section">
+        <h2 class="section-title">Works</h2>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-image"></div>
+            <div class="product-info">
+              <h3>オークダイニングテーブル</h3>
+              <p>天然オーク材を使用したシンプルなダイニングテーブル</p>
+              <div class="product-price">¥180,000</div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image"></div>
+            <div class="product-info">
+              <h3>レザーソファ</h3>
+              <p>本革を使用した上質な2人掛けソファ</p>
+              <div class="product-price">¥320,000</div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image"></div>
+            <div class="product-info">
+              <h3>ウォールナットシェルフ</h3>
+              <p>ウォールナット材の美しい木目を活かしたシェルフ</p>
+              <div class="product-price">¥85,000</div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image"></div>
+            <div class="product-info">
+              <h3>スチールチェア</h3>
+              <p>スタイリッシュなスチール製のモダンチェア</p>
+              <div class="product-price">¥45,000</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="page-section" id="news">
+      <div class="content-section">
+        <h2 class="section-title">ニュース</h2>
+        <div class="news-grid">
+          <article class="news-card">
+            <div class="news-image">
+              <span class="news-date">2025.09.01</span>
+            </div>
+            <div class="news-content">
+              <span class="news-category">新商品</span>
+              <h3 class="news-title">2025年秋冬コレクション発表</h3>
+              <p class="news-excerpt">天然素材にこだわった新しいダイニングセットとリビング家具を発表いたします。</p>
+            </div>
+          </article>
+          <article class="news-card">
+            <div class="news-image">
+              <span class="news-date">2025.08.25</span>
+            </div>
+            <div class="news-content">
+              <span class="news-category">イベント</span>
+              <h3 class="news-title">ショールームリニューアル</h3>
+              <p class="news-excerpt">より多くの商品を体験していただけるよう、ショールームを拡張リニューアルいたします。</p>
+            </div>
+          </article>
+          <article class="news-card">
+            <div class="news-image">
+              <span class="news-date">2025.08.10</span>
+            </div>
+            <div class="news-content">
+              <span class="news-category">メディア</span>
+              <h3 class="news-title">CASA BRUTUS掲載</h3>
+              <p class="news-excerpt">当社のオークダイニングテーブルが特集で紹介されました。</p>
+            </div>
+          </article>
+          <article class="news-card">
+            <div class="news-image">
+              <span class="news-date">2025.07.28</span>
+            </div>
+            <div class="news-content">
+              <span class="news-category">サービス</span>
+              <h3 class="news-title">カスタムオーダー開始</h3>
+              <p class="news-excerpt">お客様のご要望に合わせたオーダーメイド家具の制作を開始いたします。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="page-section" id="contact">
+      <div class="content-section">
+        <h2 class="section-title">お問い合わせ</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>ショールーム情報</h3>
+            <p><strong>住所:</strong><br>
+              〒259-0131<br>
+              神奈川県中郡二宮町中里2-20-17</p>
+
+            <p><strong>営業時間:</strong><br>
+              平日: 10:00 - 18:00<br>
+              土日祝: 10:00 - 17:00<br>
+              定休日: 水曜日</p>
+
+            <p><strong>電話:</strong> 0463-XX-XXXX<br>
+              <strong>メール:</strong> info@Mokkai-furniture.com
+            </p>
+          </div>
+
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">お名前</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">メールアドレス</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">件名</label>
+              <input type="text" id="subject" name="subject">
+            </div>
+            <div class="form-group">
+              <label for="message">メッセージ</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">送信する</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
