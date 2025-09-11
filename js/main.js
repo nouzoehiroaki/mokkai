@@ -62,3 +62,41 @@ menuOverlay.addEventListener('click', (e) => {
     menuOverlay.classList.remove('active');
   }
 });
+
+// ローディングアニメーション（CSP対応版）
+document.addEventListener('DOMContentLoaded', function() {
+  const loadingScreen = document.querySelector('.loading-screen');
+  const mainSite = document.querySelector('.main-site');
+  
+  // メインサイトを最初は非表示に
+  mainSite.style.display = 'none';
+  mainSite.style.opacity = '0';
+
+  // 関数として定義してsetTimeoutに渡す（CSP対応）
+  function fadeOutLoading() {
+    loadingScreen.style.opacity = '0';
+    loadingScreen.style.transition = 'opacity 0.5s ease';
+    
+    // フェードアウト完了後に削除
+    function removeLoading() {
+      loadingScreen.remove();
+    }
+    setTimeout(removeLoading, 500);
+  }
+
+  function showMainSite() {
+    mainSite.style.display = 'block';
+    
+    function fadeInMainSite() {
+      mainSite.style.transition = 'opacity 4s ease';
+      mainSite.style.opacity = '1';
+    }
+    setTimeout(fadeInMainSite, 100);
+  }
+
+  // 3.8秒後にローディング画面をフェードアウト
+  setTimeout(fadeOutLoading, 3800);
+
+  // 3.8秒後にメインサイトを表示
+  setTimeout(showMainSite, 3800);
+});
