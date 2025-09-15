@@ -11,6 +11,8 @@
     rel="stylesheet">
   <title>Mokkai | 職人さんが作る家</title>
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="./css/swiper.css">
 </head>
 
 <body>
@@ -44,7 +46,7 @@
       <div class="loading-logo">
         <img src="images/logo/mokkai-logo.svg" alt="Mokkai" class="logo-svg">
       </div>
-      <div class="loading-text">シンプルで上質な家具</div>
+      <div class="loading-text">職人さんが作る家</div>
     </div>
   </div>
 
@@ -52,11 +54,12 @@
   <div class="main-container main-site">
     <!-- Home Section -->
     <section class="page-section home-section active" id="home">
+      <div class="fv-mask"></div>
       <div class="hero-content">
         <h1>
           <img src="./images/logo/mokkai-logo07.svg" alt="">
         </h1>
-        <p>シンプルで上質な家具で、あなたの空間を豊かに</p>
+        <p>上質な手作りの家で、あなたの空間を豊かに</p>
         <a href="#" class="cta-button" data-page="products">施工事例を見る</a>
       </div>
     </section>
@@ -67,24 +70,67 @@
         <h2 class="section-title">Mokkaiについて</h2>
         <div class="about-content">
           <div class="about-text">
-            <p>Mokkaiは、シンプルで機能的、そして美しいデザインの家具を提供しています。職人の技術と現代的なデザインが融合した、長く愛用していただける家具を心を込めて製作しています。</p>
-            <p>素材選びから仕上げまで、すべての工程において品質を追求し、お客様の暮らしに寄り添う家具をお届けします。</p>
+            <p>Mokkaiは、シンプルで機能的、そして美しいデザインの手作りの家を提供しています。職人の技術と現代的なデザインが融合した、長く愛用していただける家を心を込めて製作しています。</p>
+            <p>素材選びから仕上げまで、すべての工程において品質を追求し、お客様の暮らしに寄り添う家をお届けします。</p>
           </div>
-          <div class="about-image"></div>
+          <div class="about-image">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/about01.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/about02.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/about03.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/about04.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/about05.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/about06.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/about07.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/about08.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Products Section -->
     <section class="page-section" id="products">
-      <div class="works-top"></div>
+      <div class="works-top">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/works01.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/works02.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/works03.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="content-section">
         <h2 class="section-title">Works</h2>
         <div class="products-grid">
           <div class="product-card">
             <div class="product-image"></div>
             <div class="product-info">
-              <h3>オークダイニングテーブル</h3>
+              <h3>タイトルが入ります</h3>
               <p>天然オーク材を使用したシンプルなダイニングテーブル</p>
               <div class="product-price">¥180,000</div>
             </div>
@@ -92,7 +138,7 @@
           <div class="product-card">
             <div class="product-image"></div>
             <div class="product-info">
-              <h3>レザーソファ</h3>
+              <h3>タイトルが入ります</h3>
               <p>本革を使用した上質な2人掛けソファ</p>
               <div class="product-price">¥320,000</div>
             </div>
@@ -100,7 +146,7 @@
           <div class="product-card">
             <div class="product-image"></div>
             <div class="product-info">
-              <h3>ウォールナットシェルフ</h3>
+              <h3>タイトルが入ります</h3>
               <p>ウォールナット材の美しい木目を活かしたシェルフ</p>
               <div class="product-price">¥85,000</div>
             </div>
@@ -108,7 +154,7 @@
           <div class="product-card">
             <div class="product-image"></div>
             <div class="product-info">
-              <h3>スチールチェア</h3>
+              <h3>タイトルが入ります</h3>
               <p>スタイリッシュなスチール製のモダンチェア</p>
               <div class="product-price">¥45,000</div>
             </div>
@@ -216,6 +262,8 @@
     </section>
   </div>
   <script src="./js/main.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/swiper.js"></script>
 </body>
 
 </html>
