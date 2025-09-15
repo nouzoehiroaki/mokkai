@@ -12,6 +12,20 @@ let currentPage = 'home';
 const pages = document.querySelectorAll('.page-section');
 const menuLinks = document.querySelectorAll('[data-page]');
 
+// Update menu active state
+function updateMenuActiveState() {
+  menuLinks.forEach(link => {
+    const linkPage = link.getAttribute('data-page');
+    if (linkPage === currentPage) {
+      link.classList.add('active');
+      link.style.pointerEvents = 'none';
+    } else {
+      link.classList.remove('active');
+      link.style.pointerEvents = 'auto';
+    }
+  });
+}
+
 function showPage(targetPage) {
   if (targetPage === currentPage) return;
 
@@ -35,6 +49,9 @@ function showPage(targetPage) {
 
   currentPage = targetPage;
 
+  // Update menu active state
+  updateMenuActiveState();
+
   // Close menu
   hamburger.classList.remove('active');
   menuOverlay.classList.remove('active');
@@ -49,11 +66,14 @@ menuLinks.forEach(link => {
   });
 });
 
+// Initialize menu active state on page load
+updateMenuActiveState();
+
 // Contact form handling
-document.querySelector('.contact-form').addEventListener('submit', function (e) {
-  e.preventDefault();
-  alert('お問い合わせありがとうございます。後日担当者よりご連絡いたします。');
-});
+// document.querySelector('.contact-form').addEventListener('submit', function (e) {
+//   e.preventDefault();
+//   alert('お問い合わせありがとうございます。後日担当者よりご連絡いたします。');
+// });
 
 // Close menu when clicking outside
 menuOverlay.addEventListener('click', (e) => {
